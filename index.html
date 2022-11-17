@@ -103,9 +103,9 @@
                 const tel = credentialsRef.elements['tel'].value
                 const messege = credentialsRef.elements['messege'].value
                 const sendingTime = new Date();
-                const done = "no";
+                let checked = false;
 
-                login({ name, email,tel,messege,sendingTime,done })
+                login({ name, email,tel,messege,sendingTime,checked })
             })
 
             function login(credentials) {

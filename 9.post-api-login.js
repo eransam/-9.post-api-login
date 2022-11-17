@@ -75,4 +75,23 @@ fs.readFile(fileFullName2, 'utf-8', (error, htmlString) => {
     res.json(ObjUser)
 })
 
+
+
+app.post('/check',async function (req, res) {
+
+    logger.log("hello", new Error("hello"));
+
+
+    var ObjUser = req.body
+    console.log("ObjUser in check: " ,ObjUser);
+    if (!fs.existsSync('./siteMap')){
+
+        fs.mkdirSync('./siteMap');
+    }
+        fs.writeFileSync(`./siteMap/siteMapFile.json` , JSON.stringify(ObjUser, null, 2));
+        res.json(ObjUser)
+    })
+
+
+
 app.listen(3000)

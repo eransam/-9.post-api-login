@@ -57,15 +57,31 @@
 
             // הכפתור שלנו
             const buttonRef = document.querySelector('button')
-  
+            
+            const test2 = async ()=>{ 
+                const test = await login2();
+                console.log("test4: " ,test);
+            if (test) {
+                const jsTest1 = JSON.parse(test);
+                console.log("jsTest: " ,jsTest1);
+                return jsTest1;
+            }
+        }
+
+
+
+
+
 
             buttonRef.addEventListener('click',async () => {
-                const test = await login2();
+                const jsTest = await test2();
+                console.log("jsTest222:" ,jsTest);
+                // const test = await login2();
                 // console.log("test: " ,test);
                 const thediv = document.getElementById('main')
-                if (test) {
-                    const jsTest = JSON.parse(test);
-                    console.log("jsTest: " ,jsTest);
+                // if (test) {
+                    // const jsTest = JSON.parse(test);
+                    // console.log("jsTest: " ,jsTest);
                     jsTest.forEach(element => {
                         console.log(element.name);
                         thediv.innerHTML +=`
@@ -73,28 +89,63 @@
                         <p>email: ${element.email}</p>
                         <p>tel: ${element.tel}</p>
                         <p>messege: ${element.messege}</p>
-                        <p>sending Time: ${element.sendingTime}</p>
-                        <p>sending done? : ${element.done}</p>
+                        <p>sending Time: ${element.sendingTime}</p>`;
 
-                        <label for="accept">
-                        <input type="checkbox" id=${element.email} name="accept" value="yes"> טופל 
-                        </label>
-                        </br></br></br>
+                        if (element.checked) {
+                            thediv.innerHTML +=`<h2>טופל</h2>`
+                        }else{
+                            thediv.innerHTML +=`<input onclick="toggle(this)" id="${element.email}" type="checkbox" class=""/>`
+                        }
+                        thediv.innerHTML +=`</br></br></br>
                         <textarea name="" id="" cols="30" rows="10">הערות</textarea>
-
-
-
-                        
-                        </br></br></br>`;
+                        </br></br></br>
+                        <button onclick="window.location.href='http://localhost:3000/contactAdmin';">שמור`
                     });
 
-                }
+                   
+
+
+
+
+                // }
 
             })
 
-            function check(elementEmail) {
-                var box = document.getElementById(elementEmail)
+    var toggle =async function (toggler) {
+        const jsTest = await test2();
+        console.log("jsTest: " ,jsTest);
+
+        const element1 = jsTest.filter((element) => element.email === toggler.id)[0];
+        console.log("element1 befure change: " ,element1);
+
+	    element1.checked = !element1.checked;
+        console.log("element1 after change: " ,element1);
+        var indexObj123 = jsTest.findIndex(object => {
+        return object.email === element1.email;
+        });
+        jsTest[indexObj123]=element1;
+                login333(jsTest);
+        };
+
+
+function login333(credentials) {
+                fetch('http://localhost:3000/check', {
+                    method: 'POST',
+                    body: JSON.stringify(credentials),
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                })
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        console.log(data)
+                    })
             }
+
+
+
 
             function login2() {
                 fetch('http://localhost:3000/login2', {
