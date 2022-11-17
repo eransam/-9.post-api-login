@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post to server</title>
+        <style>
+            html {
+                background: #333;
+            }
+            body {
+                text-align: center;
+            }
+            .credentials {
+                padding: 200px 0;
+            }
+            .inputs {
+                padding: 5px;
+            }
+            .inputs input {
+                width: 180px;
+                height: 20px;
+                padding: 3px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #e4007c;
+                background: #333;
+                font-size: 14px;
+                color: #f7f7f7;
+            }
+            ::placeholder {
+                color: #f7f7f7;
+            }
+            h2 {
+                color: aquamarine;
+            }
+            button {
+                margin-top: 10px;
+                width: 180px;
+                height: 30px;
+                padding: 8px;
+                display: inline-block;
+                color: #e4007c;
+                background: #333;
+                border: 1px solid #e4007c;
+                cursor: pointer;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>This html come from the server</h2>
+        <div class="credentials">
+            <form id="credentials">
+        
+                <div class="inputs">
+
+
+                    <input
+                        type="text"
+                        placeholder="name..."
+                        name="name"
+                    />
+                </div>
+
+                <div class="inputs">
+                    <input
+                        type="email"
+                        placeholder="email..."
+                        name="email"
+                    />
+                </div>
+
+                
+                <div class="inputs">
+                    <input
+                        type="tel"
+                        placeholder="tel..."
+                        name="tel"
+                    />
+                </div>
+
+                <p><label for="w3review">messege:</label></p>
+                <textarea id="messege" name="messege" rows="4" cols="50">write your messege.</textarea>
+                <br>
+
+
+
+
+            </form>
+            <div><button type="button">Send</button></div>
+        </div>
+
+        <script>
+
+            // הכפתור שלנו
+            const buttonRef = document.querySelector('button')
+
+            // כל הפורם שלנו
+            const credentialsRef = document.querySelector('#credentials')
+
+            buttonRef.addEventListener('click', () => {
+                const name = credentialsRef.elements['name'].value
+                const email = credentialsRef.elements['email'].value
+                const tel = credentialsRef.elements['tel'].value
+                const messege = credentialsRef.elements['messege'].value
+                const sendingTime = new Date();
+                const done = "no";
+
+                login({ name, email,tel,messege,sendingTime,done })
+            })
+
+            function login(credentials) {
+                fetch('http://localhost:3000/login', {
+                    method: 'POST',
+                    body: JSON.stringify(credentials),
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                })
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        console.log(data)
+                    })
+            }
+        </script>
+    </body>
+</html>

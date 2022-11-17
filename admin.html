@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post to server</title>
+        <style>
+            html {
+                background: #333;
+            }
+            body {
+                text-align: center;
+            }
+            .credentials {
+                padding: 200px 0;
+            }
+            .inputs {
+                padding: 5px;
+            }
+            .inputs input {
+                width: 180px;
+                height: 20px;
+                padding: 3px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #e4007c;
+                background: #333;
+                font-size: 14px;
+                color: #f7f7f7;
+            }
+            ::placeholder {
+                color: #f7f7f7;
+            }
+            h2 {
+                color: aquamarine;
+            }
+            button {
+                margin-top: 10px;
+                width: 180px;
+                height: 30px;
+                padding: 8px;
+                display: inline-block;
+                color: #e4007c;
+                background: #333;
+                border: 1px solid #e4007c;
+                cursor: pointer;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="credentials">
+            <div id="main">
+                <button type="button">view the lids</button></div>
+        </div>
+        <script>
+
+            var eranarr=""
+
+            // הכפתור שלנו
+            const buttonRef = document.querySelector('button')
+  
+
+            buttonRef.addEventListener('click',async () => {
+                const test = await login2();
+                // console.log("test: " ,test);
+                const thediv = document.getElementById('main')
+                if (test) {
+                    const jsTest = JSON.parse(test);
+                    console.log("jsTest: " ,jsTest);
+                    jsTest.forEach(element => {
+                        console.log(element.name);
+                        thediv.innerHTML +=`
+                        <p>tel: ${element.name}</p>
+                        <p>email: ${element.email}</p>
+                        <p>tel: ${element.tel}</p>
+                        <p>messege: ${element.messege}</p>
+                        <p>sending Time: ${element.sendingTime}</p>
+                        <p>sending done? : ${element.done}</p>
+
+                        <label for="accept">
+                        <input type="checkbox" id=${element.email} name="accept" value="yes"> טופל 
+                        </label>
+                        </br></br></br>
+                        <textarea name="" id="" cols="30" rows="10">הערות</textarea>
+
+
+
+                        
+                        </br></br></br>`;
+                    });
+
+                }
+
+            })
+
+            function check(elementEmail) {
+                var box = document.getElementById(elementEmail)
+            }
+
+            function login2() {
+                fetch('http://localhost:3000/login2', {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                })
+                    .then((response) => {
+                        return response.json()
+                    })
+                    .then((data) => {
+                        eranarr = data
+                    })
+                    // console.log("eranarr: " , eranarr);
+                    return eranarr;
+            }
+
+
+        </script>
+    </body>
+</html>

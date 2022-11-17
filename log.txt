@@ -1,0 +1,97 @@
+Wed, 16 Nov 2022 18:11:56 GMT
+err.message
+err
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 18:20:01 GMT
+[object Object]
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 18:35:48 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:24:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 18:37:50 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:24:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 18:38:41 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:24:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 19:57:08 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:45:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 19:57:14 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:45:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Wed, 16 Nov 2022 19:57:19 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\2.post-delete-put-patch-api\9.post-api-login\9.post-api-login.js:45:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\jhon-bryce-assaf\classes with haim-assaf\6-11.11.21- .xml-http-request, jQuery-ajax, fetch,web-services-apis\9.web-services-apis\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
