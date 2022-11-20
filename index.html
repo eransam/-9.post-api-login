@@ -137,7 +137,7 @@
         <script>
 
 
-async function  login2() {
+async function  getObj() {
                var theFetch = await fetch('http://localhost:3000/login2', {
                     method: 'POST',
                     headers: {
@@ -247,13 +247,13 @@ async function  login2() {
                 }else{
                     
                 confirm(" name "+ name + " email: " + email + " tel: " + tel + " messege: " + messege +"Are you sure you entered the correct details?");
-                login({ name, email,tel,messege,sendingTime,checked })
+                getObj2({ name, email,tel,messege,sendingTime,checked })
                 window.location.href='http://localhost:3000/thenku';
 
                 }
             })
             const test2 = async ()=>{ 
-                const test = await login2();
+                const test = await getObj();
                 console.log("test4: " ,test);
             if (test) {
                 const jsTest1 = JSON.parse(test);
@@ -264,20 +264,8 @@ async function  login2() {
 
 
 
-            async function checkedEmail(objArr) {
-                for (var iterator of objArr) {
-                    if (iterator.email === email) {
-                       return iterator
-                    }
-                    else{
-                        return ""
-                    }
-                    
-                }
-                
-            }
 
-            async function  login(credentials) {
+            async function  getObj2(credentials) {
                var theFetch = await fetch('http://localhost:3000/login', {
                     method: 'POST',
                     body: JSON.stringify(credentials),

@@ -2495,3 +2495,33 @@ Stack: Error: hello
     at urlencodedParser (C:\eran\‏‏9.post-api-login\node_modules\body-parser\lib\types\urlencoded.js:82:7)
     at Layer.handle [as handle_request] (C:\eran\‏‏9.post-api-login\node_modules\express\lib\router\layer.js:95:5)
 ----------------------------------------------------------------------------------------------------
+Sun, 20 Nov 2022 21:49:05 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\9.post-api-login.js:54:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\-9.post-api-login\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------
+Sun, 20 Nov 2022 21:58:34 GMT
+hello
+Message: hello
+Stack: Error: hello
+    at C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\mainpro.js:54:25
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\erans\OneDrive\שולחן העבודה\aq-web\project\node_modules\express\lib\router\layer.js:95:5)
+----------------------------------------------------------------------------------------------------

@@ -71,11 +71,9 @@
             const buttonRef = document.getElementById('buttonLids')
             
             const test2 = async ()=>{ 
-                const test = await login2();
-                console.log("test4: " ,test);
+                const test = await getObj2();
             if (test) {
                 const jsTest1 = JSON.parse(test);
-                console.log("jsTest: " ,jsTest1);
                 return jsTest1;
             }
         }
@@ -160,7 +158,7 @@
         return object.email === element1.email;
         });
         jsTest[indexObj123]=element1;
-        login333(jsTest);
+        getObj(jsTest);
         window.location.href='http://localhost:3000/contactAdmin';
         };
 
@@ -183,14 +181,14 @@
         });
         console.log("element2: " ,element2);
         jsTest2[indexObj1234] = element2;
-        login333(jsTest2);
+        getObj(jsTest2);
         window.location.href='http://localhost:3000/contactAdmin';
 
         };
 
 
 
-function login333(credentials) {
+function getObj(credentials) {
                 fetch('http://localhost:3000/check', {
                     method: 'POST',
                     body: JSON.stringify(credentials),
@@ -209,7 +207,7 @@ function login333(credentials) {
 
 
 
-           async function  login2() {
+           async function  getObj2() {
                var theFetch = await fetch('http://localhost:3000/login2', {
                     method: 'POST',
                     headers: {
