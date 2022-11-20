@@ -48,6 +48,10 @@
     </head>
     <body>
         <h2>This html come from the server</h2>
+        <div>
+            <button onclick="window.location.href='http://localhost:3000/contactAdmin';">Admin page</button>
+            <button onclick="window.location.href='http://localhost:3000/';">User page</button>
+        </div>
         <div class="credentials">
             <form id="credentials">
         
@@ -86,26 +90,31 @@
 
 
             </form>
-            <div><button type="button">Send</button></div>
+            <div><button type="button" id="button1">Send</button></div>
         </div>
 
         <script>
 
             // הכפתור שלנו
-            const buttonRef = document.querySelector('button')
+            const buttonRef = document.getElementById("button1")
+            console.log(buttonRef);
 
             // כל הפורם שלנו
             const credentialsRef = document.querySelector('#credentials')
 
             buttonRef.addEventListener('click', () => {
+                console.log("buttonRef");
+
                 const name = credentialsRef.elements['name'].value
                 const email = credentialsRef.elements['email'].value
                 const tel = credentialsRef.elements['tel'].value
                 const messege = credentialsRef.elements['messege'].value
                 const sendingTime = new Date();
                 let checked = false;
+                let adminMessege = "false";
 
                 login({ name, email,tel,messege,sendingTime,checked })
+                window.location.href='http://localhost:3000/';
             })
 
             function login(credentials) {
