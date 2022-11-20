@@ -44,7 +44,6 @@
                 cursor: pointer;
                 outline: none;
             }
-
             .userCard{
                 background: #333;
                 color: #e4007c;
@@ -53,7 +52,6 @@
                 width: 500px;
                 margin: auto;
             }
-
             .disNone{
                 display: none;
             }
@@ -69,10 +67,7 @@
                 <button type="button" id="buttonLids">view the lids</button></div>
         </div>
         <script>
-
             var eranarr=""
-
-            // הכפתור שלנו
             const buttonRef = document.getElementById('buttonLids')
             
             const test2 = async ()=>{ 
@@ -85,20 +80,11 @@
             }
         }
 
-
-
-
-
-
             buttonRef.addEventListener('click',async () => {
                 const jsTest = await test2();
                 console.log("jsTest222:" ,jsTest);
-                // const test = await login2();
-                // console.log("test: " ,test);
                 const thediv = document.getElementById('main')
-                // if (test) {
-                    // const jsTest = JSON.parse(test);
-                    // console.log("jsTest: " ,jsTest);
+                    console.log("jsTest: " ,jsTest);
                     jsTest.forEach(element => {
                         console.log(element.name);
                         thediv.innerHTML +=`
@@ -111,8 +97,6 @@
                             <p>sending Time: ${element.sendingTime}</p>
                         </div>`
 
-
-
                         if (element.checked && element.adminMessege){
                                     thediv.innerHTML +=
                                 `
@@ -121,7 +105,6 @@
                                     <p>admin Messege: ${element.adminMessege}</p>
                                 </div>`
                                 }else{
-
                                 if (element.checked) {
                                 thediv.innerHTML +=
                                 `
@@ -138,9 +121,7 @@
                                 </br></br></br>
                                 `
                             }else{
-
                             if (element.adminMessege) {
-                                    log
                                     thediv.innerHTML +=
                                 `
                                 <div class="userCard">
@@ -150,11 +131,8 @@
                                     <button>שמור</button>
                                 </form>
                                 </div>
-                                `
-                                    
+                                `  
                                 }
-                        
-    
                                 else{
                                     thediv.innerHTML +=`
                                 <form  onsubmit="adminMessege(this)">
@@ -167,40 +145,23 @@
                                 </br></br></br>
                                 </div>
                                 </br></br></br>`
-
                                 }
                             }
-                        }
-                                
-
-
-                            
-                    
+                        }            
                 });
-
-                   
-
-
-
-
-                // }
-
             })
 
     var toggle =async function (toggler) {
         const jsTest = await test2();
-        console.log("jsTest: " ,jsTest);
-
         const element1 = jsTest.filter((element) => element.email === toggler.id)[0];
-        console.log("element1 befure change: " ,element1);
-
 	    element1.checked = !element1.checked;
         console.log("element1 after change: " ,element1);
         var indexObj123 = jsTest.findIndex(object => {
         return object.email === element1.email;
         });
         jsTest[indexObj123]=element1;
-                login333(jsTest);
+        login333(jsTest);
+        window.location.href='http://localhost:3000/contactAdmin';
         };
 
 
@@ -248,24 +209,20 @@ function login333(credentials) {
 
 
 
-            function login2() {
-                fetch('http://localhost:3000/login2', {
+           async function  login2() {
+               var theFetch = await fetch('http://localhost:3000/login2', {
                     method: 'POST',
                     headers: {
                         'Content-type': 'application/json',
                     },
                 })
                     .then((response) => {
+                        console.log("response: " ,response);
                         return response.json()
                     })
-                    .then((data) => {
-                        eranarr = data
-                    })
-                    // console.log("eranarr: " , eranarr);
-                    return eranarr;
+                    console.log("theFetch: " ,theFetch);
+                    return theFetch;        
             }
-
-
         </script>
     </body>
 </html>

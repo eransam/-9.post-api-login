@@ -24,6 +24,15 @@ app.get('/contactAdmin', function (req, res) {
     })
 })
 
+app.get('/thenku', function (req, res) {
+    const fileFullName2 = path.join(__dirname, './thenku.html')
+    fs.readFile(fileFullName2, 'utf-8', (error, htmlString2) => {
+        res.send(htmlString2)
+    })
+})
+
+
+
 
 
 app.post('/login2',async function (req, res) {
@@ -48,6 +57,7 @@ app.post('/login',async function (req, res) {
     const arr = [];
     var ObjUser = req.body
     console.log("ObjUser123 : " ,ObjUser);
+    
 
     if (!fs.existsSync('./siteMap')){
 
